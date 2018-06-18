@@ -1,0 +1,99 @@
+$primary: #ec8026;
+$success: #65bfa3;
+$text: #2b2a2f;
+$bg: #ffffff;
+$bg-darken: #ebebeb;
+$bg-header: #fefefe;
+$border: #dbdbdb;
+
+body{
+    background-color: $bg-darken;
+}
+
+.header{
+    background-color: $bg-header;
+    border-bottom: 1px solid $border;
+}
+
+.question-container{
+    font-size: 1.2em;
+    .question-card {
+        background-color: $bg;
+        width: 100%;
+        height: 100%;
+    }
+    .dots{
+        .dot{
+            width: 15px;
+            height: 15px;
+            background-color: $border;
+            margin: 2px 5px;
+            transition: .3s ease;
+        }
+        .dot-success{
+            background-color: $success;
+        }
+        .dot-current{
+            background-color: $primary;
+        }
+    }
+}
+
+.progress-line{
+    width: 70%;
+    height: 20px;
+    background-color: $primary;
+    display: block;
+    transition: width 0.3s ease; 
+}
+
+.options{
+    list-style-type: none;
+    background-color: $bg;
+    .option{
+        &:last-child{
+            border-bottom: 0 !important;
+        }
+        .option-marker{
+            font-size: 1.25em;
+            width: 40px;
+            height: 40px;
+            line-height: 38px;
+            transition: .3s ease;
+            border-color: $border;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .option-text{
+            border-color: $border;     
+            text-align: justify;       
+        }
+        &:hover{
+            cursor: pointer;
+            .option-marker{
+                background-color: $success;
+                color: #fff;
+                border-color: #fff !important;
+            }
+        }
+    }
+}
+
+.next-btn{
+    background-color: $primary;
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    transition: .2s ease;
+    &:hover{
+        cursor: pointer;
+        background-color: lighten($color: $primary, $amount: 5%);
+    }
+}
+
+@media(min-width: 768px){
+    .shadow-md{
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    }
+}
+

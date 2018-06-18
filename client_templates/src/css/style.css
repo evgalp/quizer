@@ -1,0 +1,68 @@
+body {
+  background-color: #ebebeb; }
+
+.header {
+  background-color: #fefefe;
+  border-bottom: 1px solid #dbdbdb; }
+
+.question-container {
+  font-size: 1.2em; }
+  .question-container .question-card {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%; }
+  .question-container .dots .dot {
+    width: 15px;
+    height: 15px;
+    background-color: #dbdbdb;
+    margin: 2px 5px;
+    transition: .3s ease; }
+  .question-container .dots .dot-success {
+    background-color: #65bfa3; }
+  .question-container .dots .dot-current {
+    background-color: #ec8026; }
+
+.progress-line {
+  width: 70%;
+  height: 20px;
+  background-color: #ec8026;
+  display: block;
+  transition: width 0.3s ease; }
+
+.options {
+  list-style-type: none;
+  background-color: #ffffff; }
+  .options .option:last-child {
+    border-bottom: 0 !important; }
+  .options .option .option-marker {
+    font-size: 1.25em;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    transition: .3s ease;
+    border-color: #dbdbdb;
+    text-align: center;
+    vertical-align: middle; }
+  .options .option .option-text {
+    border-color: #dbdbdb;
+    text-align: justify; }
+  .options .option:hover {
+    cursor: pointer; }
+    .options .option:hover .option-marker {
+      background-color: #65bfa3;
+      color: #fff;
+      border-color: #fff !important; }
+
+.next-btn {
+  background-color: #ec8026;
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+  transition: .2s ease; }
+  .next-btn:hover {
+    cursor: pointer;
+    background-color: #ee8e3d; }
+
+@media (min-width: 768px) {
+  .shadow-md {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; } }
